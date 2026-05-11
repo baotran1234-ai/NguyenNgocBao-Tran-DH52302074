@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper > * {
+    padding: 20px;
+    flex: 1 100%;
+}
+
+.header-flex-2 {
+    background: tomato;
+    order: 0;
+}
+
+.footer-flex-2 {
+    background: lightgreen;
+    order: 5;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+    min-height: 200px;
+    order: 2;
+}
+
+.aside {
+    min-height: 150px;
+}
+
+.aside-1 {
+    background: gold;
+    order: 3;
+}
+
+.aside-2 {
+    background: hotpink;
+    order: 4;
+}
+
+/* Responsive cho Tablet (>= 600px): 2 cột ở phần Aside */
+@media (min-width: 600px) {
+    .aside-1 {
+        flex: 1 50%;
+    }
+
+    .aside-2 {
+        flex: 1 50%;
+    }
+}
+
+/* Responsive cho Desktop (>= 1200px): 3 cột (Aside 1 | Main | Aside 2) */
+@media (min-width: 1200px) {
+    .main {
+        flex: 3 0px;
+        order: 2;
+        height: 400px;
+    }
+
+    .aside-1 {
+        flex: 1 0px;
+        order: 1;
+        height: 400px;
+    }
+
+    .aside-2 {
+        flex: 1 0px;
+        order: 3;
+        height: 400px;
+    }
+}

@@ -1,0 +1,8 @@
+﻿uploads/products/*
+uploads/banners/*
+uploads/avatars/*
+!uploads/products/.gitkeep
+!uploads/banners/.gitkeep
+!uploads/avatars/.gitkeep
+.env
+config/database.php

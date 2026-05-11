@@ -1,0 +1,136 @@
+:root {
+    /* Color Palette */
+    --bg-color: #f0f2f5;
+    --container-bg: #ffffff;
+    --h-menu-bg: #7FFFD4; /* Aquamarine base from image */
+    --v-menu-bg: #3498db; /* Blue base from image */
+    --accent-orange: #ff9800; /* Active/First item color in image */
+    --hover-yellow: #ffeb3b;
+    --text-dark: #2d3436;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.section {
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- 2.2.2 TẠO MENU NGANG --- */
+.menu-ngang {
+    list-style: none;
+    display: flex;
+    background-color: var(--h-menu-bg);
+    padding: 5px;
+    gap: 2px;
+    width: fit-content;
+}
+
+.menu-ngang li {
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #333;
+    font-weight: 400;
+}
+
+/* First item like in screenshot (Orange) */
+.menu-ngang li:first-child {
+    background-color: var(--accent-orange);
+    color: white;
+    font-weight: bold;
+}
+
+/* REQUIRED: Menu Ngang Hover effect */
+.menu-ngang li:hover {
+    background-color: var(--hover-yellow) !important;
+    border-radius: 5px;
+    font-weight: bold !important;
+    color: #000;
+}
+
+/* --- 2.2.3 TẠO MENU DỌC --- */
+.menu-doc {
+    list-style: none;
+    width: 280px;
+    background-color: var(--v-menu-bg);
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu-doc li {
+    padding: 15px 25px;
+    color: var(--text-light);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-doc li:last-child {
+    border-bottom: none;
+}
+
+/* REQUIRED: Menu Doc Hover effect */
+.menu-doc li:hover {
+    /* "làm sáng màu nền xanh dương (130%)" */
+    background-color: #3498db; 
+    filter: brightness(1.3);
+    font-style: italic;
+    padding-left: 35px; /* Subtle premium micro-animation */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .menu-ngang {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-doc {
+        width: 100%;
+    }
+}

@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px; /* Font size cho 1 cột (mặc định cho mobile) */
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 20px;
+    flex: 1 100%;
+}
+
+.header-flex-2 {
+    background: tomato;
+    order: 0;
+}
+
+.footer-flex-2 {
+    background: lightgreen;
+    order: 5;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+    min-height: 200px;
+    order: 2;
+}
+
+.main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.aside {
+    min-height: 150px;
+}
+
+.aside-1 {
+    background: gold;
+    order: 3;
+}
+
+.aside-2 {
+    background: hotpink;
+    order: 4;
+}
+
+/* Responsive cho Tablet (>= 600px): 2 cột ở phần Aside */
+@media (min-width: 600px) {
+    body {
+        font-size: 16px; /* Font size trở về 16px khi không còn là 1 cột */
+    }
+
+    .aside-1 {
+        flex: 1 50%;
+    }
+
+    .aside-2 {
+        flex: 1 50%;
+    }
+}
+
+/* Responsive cho Desktop (>= 1200px): 3 cột (Aside 1 | Main | Aside 2) */
+@media (min-width: 1200px) {
+    .main {
+        flex: 3 0px;
+        order: 2;
+        min-height: 400px;
+    }
+
+    .aside-1 {
+        flex: 1 0px;
+        order: 1;
+        min-height: 400px;
+    }
+
+    .aside-2 {
+        flex: 1 0px;
+        order: 3;
+        min-height: 400px;
+    }
+}

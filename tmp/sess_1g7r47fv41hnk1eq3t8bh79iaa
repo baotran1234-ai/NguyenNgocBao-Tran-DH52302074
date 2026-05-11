@@ -1,0 +1,1 @@
+csrf_token|s:64:"d367e0633e02827725eacab8829c3c2f33a6032e9a557e7bc22fcc51e498ee9d";user_id|i:2;user|a:4:{s:2:"id";i:2;s:4:"name";s:27:"Nguyễn Ngọc Bảo Trân";s:5:"email";s:21:"baotran1234@gmail.com";s:6:"avatar";N;}admin_id|i:1;admin|a:4:{s:2:"id";i:1;s:4:"name";s:11:"Super Admin";s:5:"email";s:19:"admin@beautyshop.vn";s:4:"role";s:10:"superadmin";}

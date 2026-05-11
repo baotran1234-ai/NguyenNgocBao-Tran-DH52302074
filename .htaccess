@@ -1,0 +1,31 @@
+Options -Indexes
+RewriteEngine On
+
+# Chuyển hướng HTTPS (bật khi deploy production)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Bỏ qua file/folder thực
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tất cả request qua index.php
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Bảo vệ file ẩn
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+
+
+# Cache tĩnh
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg     "access plus 1 year"
+    ExpiresByType image/jpeg    "access plus 1 year"
+    ExpiresByType image/png     "access plus 1 year"
+    ExpiresByType image/webp    "access plus 1 year"
+    ExpiresByType text/css      "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
