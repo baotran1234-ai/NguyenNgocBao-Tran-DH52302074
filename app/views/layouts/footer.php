@@ -54,7 +54,7 @@
                     <div class="footer-contact">
                         <p><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Huệ, Q.1, TP.HCM</p>
                         <p><i class="fas fa-phone-alt"></i> 1800 6868</p>
-                        <p><i class="fas fa-envelope"></i> contact@beautyshop.vn</p>
+                        <p><i class="fas fa-envelope"></i> dh52302074@student.stu.edu.vn</p>
                         <p><i class="fas fa-clock"></i> 8:00 - 22:00 (Tất cả các ngày)</p>
                     </div>
                     <h4 class="footer-heading" style="margin-top:1.5rem">Nhận Ưu Đãi</h4>

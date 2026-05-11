@@ -39,7 +39,7 @@
         <div class="container">
             <div class="topbar-left">
                 <span><i class="fas fa-phone-alt"></i> 1800 6868</span>
-                <span><i class="fas fa-envelope"></i> contact@beautyshop.vn</span>
+                <span><i class="fas fa-envelope"></i> dh52302074@student.stu.edu.vn</span>
             </div>
             <div class="topbar-right">
                 <a href="<?= url('') ?>">🎁 Miễn phí giao hàng đơn từ <?= formatPrice(FREE_SHIPPING_OVER) ?></a>

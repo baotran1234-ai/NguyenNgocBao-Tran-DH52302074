@@ -405,7 +405,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
 INSERT INTO `settings` (`id`, `key`, `value`, `group`, `updated_at`) VALUES
 (1, 'site_name', 'LUXE Beauty', 'general', '2026-05-10 08:09:14'),
 (2, 'site_tagline', 'Vẻ đẹp đích thực từ thiên nhiên', 'general', '2026-05-10 08:09:14'),
-(3, 'site_email', 'contact@beautyshop.vn', 'general', '2026-05-10 08:09:14'),
+(3, 'site_email', 'dh52302074@student.stu.edu.vn', 'general', '2026-05-10 08:09:14'),
 (4, 'site_phone', '1800 6868', 'general', '2026-05-10 08:09:14'),
 (5, 'site_address', '123 Nguyễn Huệ, Quận 1, TP.HCM', 'general', '2026-05-10 08:09:14'),
 (6, 'shipping_fee', '30000', 'shipping', '2026-05-10 08:09:14'),
