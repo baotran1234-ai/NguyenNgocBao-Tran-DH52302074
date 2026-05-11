@@ -4,7 +4,7 @@
 // ================================================================
 
 define('APP_NAME', 'LUXE Beauty');
-define('APP_URL',  'http://localhost:8080');
+define('APP_URL',  'http://websitebanmypham.rf.gd');
 define('APP_VERSION', '1.0.0');
 
 define('ROOT_PATH',   __DIR__ . '/..');
@@ -17,7 +17,7 @@ define('MAX_FILE_SIZE',      5 * 1024 * 1024);
 define('ALLOWED_IMAGE_TYPES', ['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/jpg', 'image/pjpeg', 'image/x-png']);
 define('SHIPPING_FEE',        30000);
 define('FREE_SHIPPING_OVER', 500000);
-define('APP_ENV', 'development');
+define('APP_ENV', 'production');
 
 if (APP_ENV === 'development') {
     ini_set('display_errors', 1);
