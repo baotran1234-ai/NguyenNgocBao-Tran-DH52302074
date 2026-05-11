@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
 --
 
 INSERT INTO `admins` (`id`, `name`, `email`, `password`, `role`, `avatar`, `is_active`, `last_login`, `created_at`) VALUES
-(1, 'Super Admin', 'admin@beautyshop.vn', '$2y$10$oSCI664XvRxalsSM10zK7Owa7go1.tRGUK9o4IDWpAsF42tmpkco.', 'superadmin', NULL, 1, '2026-05-10 21:58:29', '2026-05-10 08:09:14');
+(1, 'Super Admin', 'admin@beautyshop.vn', '$2y$10$1kX9K2xiY7.5c0lhDXWF2uSfbBcZ8W8GrFffDjhmWWYlAyPkYbFJm', 'superadmin', NULL, 1, '2026-05-10 21:58:29', '2026-05-10 08:09:14');
 
 -- --------------------------------------------------------
 
